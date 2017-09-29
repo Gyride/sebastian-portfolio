@@ -6,6 +6,11 @@
       ],
       "main": true
     },
+    "banner-animation.js": {
+      "files": [
+        "scripts/banner-animation.js"
+      ]
+    },
     "main.css": {
       "files": [
         "styles/main.scss"
