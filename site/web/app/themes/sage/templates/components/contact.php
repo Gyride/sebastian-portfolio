@@ -16,7 +16,7 @@
         <desc>Created using Figma</desc>
         <g id="Canvas" transform="translate(-3892 -2726)">
             <g id="Vector">
-                <use xlink:href="#path0_fill" transform="translate(3892 2726)" fill="#FFFFFF"/>
+                <use id="svg" xlink:href="#path0_fill" transform="translate(3892 2726)" fill="#FFFFFF"/>
             </g>
             </g>
             <defs>

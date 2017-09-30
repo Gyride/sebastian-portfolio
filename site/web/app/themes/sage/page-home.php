@@ -8,7 +8,7 @@
     <?php while (have_posts() ) : the_post(); ?>
     <?php get_template_part('templates/components/banner-section'); ?>
     <?php get_template_part('templates/components/about-me'); ?>
-    
+    <?php get_template_part('templates/components/projects'); ?>
     <?php get_template_part('templates/components/contact'); ?>
     <nav>
         <ul>
