@@ -101,8 +101,21 @@ function assets() {
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
-
+  
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
-  wp_enqueue_script( 'sage/banner-animation_js', Assets\asset_path('scripts/banner-animation.js'), ["sage/js"], null, true );
+  
+  wp_register_script('sage/gsap', "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js", ["sage/js"], null, true);
+  wp_enqueue_script('sage/gsap');
+
+  wp_register_script('sage/scrollmagic', "//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js", ["sage/js"], null, true);
+  wp_enqueue_script('sage/scrollmagic');
+
+  wp_register_script('sage/gsap-ani', "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js", ["sage/js"], null, true);
+  wp_enqueue_script('sage/gsap-ani');
+  
+  wp_enqueue_script('sage/banner-animation_js', Assets\asset_path('scripts/banner-animation.js'), ["sage/js"], null, true );
+  wp_enqueue_script('sage/slide-animation_js', Assets\asset_path('scripts/slide-animation.js'), ["sage/js", "sage/scrollmagic", "sage/gsap"], null, true );
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+

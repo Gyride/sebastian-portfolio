@@ -11,6 +11,11 @@
         "scripts/banner-animation.js"
       ]
     },
+    "slide-animation.js": {
+      "files": [
+        "scripts/slide-animation.js"
+      ]
+    },
     "main.css": {
       "files": [
         "styles/main.scss"

@@ -1,0 +1,95 @@
+#allProjects
+    width: 100%
+    height: 100vh
+    position: absolute
+    .project
+        width: 100%
+        height: 100vh
+        background-color: #9F3548
+        position: relative
+
+        .light
+            position: absolute
+            top: 0
+            left: 0
+            width: 50%
+            height: 100%
+            background-color: #2F4073
+                
+        .dark
+            position: absolute
+            top: 0
+            left: 50%
+            width: 50%
+            height: 100%
+            background-color: #162656
+
+        > img
+            width: auto
+            height: 80%
+            margin: 0 5% 0 0
+            transform: perspective(1px) translateY(-50%)
+            position: absolute
+            top: 50%
+            right: 0
+
+        .desc
+            width: 372px
+            height: 65%
+            margin: 0 0 0 17.25%
+            transform: perspective(1px) translateY(-50%)
+            position: absolute
+            top: 50%
+            left: 0
+            background-color: #f7f7f7
+            padding: 30px
+                
+            h2
+                font-family: "Poppins", sans-serif
+                font-weight: 400
+                font-size: 24px
+
+            span
+                font-family: "Poppins", sans-serif
+                font-weight: 400
+                font-size: 16px
+                color: #828282
+
+            p
+                font-family: "Poppins", sans-serif
+                font-weight: 400
+                font-size: 16px
+
+            a
+                position: absolute
+                display: block
+                width: 106px
+                height: 32px
+                font-family: "Poppins", sans-serif
+                font-weight: 400
+                font-size: 16px
+                color: #000000
+                text-decoration-line: none
+                border: 1px solid #000000
+                border-radius: 45px
+                padding: 3px 32px
+                bottom: 30px
+                left: 30px
+
+            img
+                position: absolute
+                display: block
+                width: 84px
+                height: auto
+                bottom: 8px
+                right: 8px          
+            
+        .backdrop
+            width: 372px
+            height: 65%
+            margin: 0 0 0 20%
+            transform: perspective(1px) translateY(-50%)
+            position: absolute
+            top: 55%
+            left: 0
+            background-color: #2F4073

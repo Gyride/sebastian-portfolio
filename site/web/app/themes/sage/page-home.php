@@ -6,16 +6,11 @@
 ?>
 <?php if (have_posts() ): ?>
     <?php while (have_posts() ) : the_post(); ?>
-    <?php get_template_part('templates/components/banner-section'); ?>
-    <?php get_template_part('templates/components/about-me'); ?>
-    <?php get_template_part('templates/components/projects'); ?>
-    <?php get_template_part('templates/components/contact'); ?>
-    <nav>
-        <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
+        <div id="pinContainer">
+            <?php get_template_part('templates/components/banner-section'); ?>
+            <?php get_template_part('templates/components/about-me'); ?>
+            <?php get_template_part('templates/components/projects'); ?>
+            <?php get_template_part('templates/components/contact'); ?>
+        </div>
     <?php endwhile; ?>
 <?php endif; ?>

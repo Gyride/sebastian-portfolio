@@ -1,11 +1,18 @@
-<section class="hero-banner">
+<section id="hero-banner">
   <img src="<?php the_field("portrait");?>" alt="portrait"/>
   <div class="content">
-    <p> My name is 
+    <h1> My name is 
       <span class="name">
         <?php the_field("name"); ?>
       </span> and </br>I make 
       <span class="fade">Web Applications</span>
-    </p>
+    </h1>
   </div>
+  <nav>
+        <ul>
+          <li class="a">About</li>
+          <li class="p">Projects</li>
+          <li class="c">Contact</li>
+        </ul>
+    </nav>
 </section>
